@@ -34,6 +34,10 @@ public class Karyawan {
 
         {
 
+            for (int a = 0; a < Nama.length; a++) {
+                System.out.print(Datagaji[a][0] + "\t");
+                System.out.print(Nama[a] + "\t\t");
+
                 for (int s = 1; s < 5; s++) {
                     System.out.print(Datagaji[a][s] + "\t\t");
                 }
@@ -42,13 +46,26 @@ public class Karyawan {
             System.out.println("\n");
         }
         
-        
-        
-        
-        
-        
-        
-        
-        
+    public void Data(int Nik) {
+        System.out.println("=================");
+        System.out.println("\t Data Karyawan");
+        for (int a = 0; a < Nama.length; a++) {
+            if (Nik == Datagaji[a][0]) {
+                System.out.println("Nik\t\t              : " + Datagaji[a][0]);
+                System.out.println("Nama\t\t             : " + Nama[a]);
+                System.out.println("Gaji Pokok\t         : " + Datagaji[a][1]);
+                System.out.println("Tunjangan\t          : " + Datagaji[a][2]);
+                System.out.println("Bonus\t\t            : " + Datagaji[a][3]);
+                System.out.println("Denda\t\t            : " + Datagaji[a][4]);
+            }
+        }
+    }
 
-        {
+    
+    
+    
+    
+    {
+
+
+   
