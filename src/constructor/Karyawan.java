@@ -34,10 +34,6 @@ public class Karyawan {
 
         {
 
-            for (int a = 0; a < Nama.length; a++) {
-                System.out.print(Datagaji[a][0] + "\t");
-                System.out.print(Nama[a] + "\t\t");
-
                 for (int s = 1; s < 5; s++) {
                     System.out.print(Datagaji[a][s] + "\t\t");
                 }
@@ -45,5 +41,14 @@ public class Karyawan {
             }
             System.out.println("\n");
         }
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
         {
