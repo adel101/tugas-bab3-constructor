@@ -46,6 +46,8 @@ public class Karyawan {
             System.out.println("\n");
         }
         
+    
+
     public void Data(int Nik) {
         System.out.println("=================");
         System.out.println("\t Data Karyawan");
@@ -61,11 +63,49 @@ public class Karyawan {
         }
     }
 
-    
-    
-    
-    
-    {
+    public void Data(String Nama, int nilai) {
+        System.out.println("");
+        System.out.println("=================");
+        System.out.println("\t Data Karyawan Gaji");
+        System.out.printf("%s %9s %17s %15s %12s %15s \n", "Nik", "Nama", "Gaji Pokok", "Tunjangan", "Bonus", "Denda");
 
+        int p = 0;
+        if ("Gaji Pokok".equalsIgnoreCase(Nama)) {
+            p = 1;
+        } else if ("Tunjangan".equalsIgnoreCase(Nama)) {
+            p = 2;
+        } else if ("Bonus".equalsIgnoreCase(Nama)) {
+            p = 3;
+        } else if ("Denda".equalsIgnoreCase(Nama)) {
+            p = 4;
+        }
+        for (int a = 0; a < Nama.length; a++) {
+            if (nilai == Datagaji[a][p]) {
+                System.out.print(Datagaji[a][0] + "\t");
+                System.out.print(Nama[a] + "\t\t");
+                for (int s = 1; s < 5; s++) {
+                    System.out.print(Datagaji[a][s] + "\t\t");
+                }
+                System.out.println();
+            }
+        }
 
-   
+    }
+
+    public void Data(String Nama, String operator, int nilai) {
+        System.out.println();
+        System.out.println("=================");
+        System.out.println("\t              Data Karyawan " + Nama + " " + operator + " " + nilai + "");
+        System.out.printf("%s %9s %17s %15s %12s %15s \n", "Nik", "Nama", "Gaji Pokok", "Tunjangan", "Bonus", "Denda");
+        int x = 0;
+        if ("Gaji Pokok".equalsIgnoreCase(Nama)) {
+            x = 1;
+        } else if ("Tunjangan".equalsIgnoreCase(Nama)) {
+            x = 2;
+        } else if ("Bonus".equalsIgnoreCase(Nama)) {
+            x = 3;
+        } else if ("Denda".equalsIgnoreCase(Nama)) {
+            x = 4;
+        }
+
+        {
