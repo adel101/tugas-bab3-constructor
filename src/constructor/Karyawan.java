@@ -108,4 +108,60 @@ public class Karyawan {
             x = 4;
         }
 
-        {
+       switch (operator) {
+      
+            case "<":
+                for (int a = 0; a < Nama.length; a++) {
+                    if (Datagaji[a][x] < nilai) {
+                        System.out.print(Datagaji[a][0] + "\t");
+                        System.out.print(Nama[a] + "\t\t");
+                        for (int s = 1; s < 5; s++) {
+                            System.out.print(Datagaji[a][s] + "\t\t");
+                        }
+                       
+                    }
+                }
+                break;
+         
+            case "<=":
+                for (int a = 0; a < Nama.length; a++) {
+                    if (Datagaji[a][x] <= nilai) {
+                        System.out.print(Datagaji[a][0] + "\t");
+                        System.out.print(Nama[a] + "\t\t");
+                        for (int s = 1; s < 5; s++) {
+                            System.out.print(Datagaji[a][s] + "\t\t");
+                        }
+                        System.out.println();
+                    }
+                }
+                break;
+          
+            case ">":
+                for (int a = 0; a < Nama.length; a++) {
+                    if (Datagaji[a][x] > nilai) {
+                        System.out.print(Datagaji[a][0] + "\t");
+                        System.out.print(Nama[a] + "\t\t");
+                        for (int s = 1; s < 5; s++) {
+                            System.out.print(Datagaji[a][s] + "\t\t");
+                        }
+                        System.out.println();
+                    }
+                }
+                break;
+         
+            case ">=":
+                for (int a = 0; a < Nama.length; a++) {
+                    if (Datagaji[a][x] >= nilai) {
+                        System.out.print(Datagaji[a][0] + "\t");
+                        System.out.print(Nama[a] + "\t\t");
+                        for (int s = 1; s < 5; s++) {
+                            System.out.print(Datagaji[a][s] + "\t\t");
+                        }
+                        System.out.println();
+                    }
+                }
+                break;
+        }
+        
+    }
+}
