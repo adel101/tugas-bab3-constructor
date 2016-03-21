@@ -9,12 +9,11 @@ package constructor;
  *
  * @author Adel Syafrizal P
  */
-
 public class Karyawan {
 
     private String[] Nama = {"Paijo", "Lala", "Lulu", "Sabar", "Sule", "Paiman", "Ponimin", "Sutiman", "Raja", "Paijo"};
 
-    private int[][] DataGAJI = {
+    private int[][] Datagaji = {
         {101, 2000, 1000, 500, 200},
         {102, 1750, 900, 500, 200},
         {103, 2150, 1000, 300, 375},
@@ -34,8 +33,17 @@ public class Karyawan {
                 "Nik", "Nama", "Gaji Pokok", "Tunjangan", "Bonus", "Denda");
 
         {
-            
-            
-        
-    
-{
+
+            for (int a = 0; a < Nama.length; a++) {
+                System.out.print(Datagaji[a][0] + "\t");
+                System.out.print(Nama[a] + "\t\t");
+
+                for (int s = 1; s < 5; s++) {
+                    System.out.print(Datagaji[a][s] + "\t\t");
+                }
+                System.out.println();
+            }
+            System.out.println("\n");
+        }
+
+        {
